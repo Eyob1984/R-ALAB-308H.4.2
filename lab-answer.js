@@ -39,35 +39,48 @@
 
 // * You should be modifying the elements by accessing them. It is up to you which methods to use.
 
-const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"]
-const sharky = ["Sharky", "shark", 20, "Left Coast"]
-const plantee = ["Plantee", "plant",  5000 , "Mordor"]
-const porgee = ["Porgee", "Porg", 186, "Ahch-To"]
-const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"]
+// const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"]
+// const sharky = ["Sharky", "shark", 20, "Left Coast"]
+// const plantee = ["Plantee", "plant",  5000 , "Mordor"]
+// const porgee = ["Porgee", "Porg", 186, "Ahch-To"]
+// const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"]
 
-// * Plantee just had her birthday; change Plantee's array to reflect her being a year older.
+// // * Plantee just had her birthday; change Plantee's array to reflect her being a year older.
 
-plantee[2] = 1;
-console.log(plantee)
+// plantee[2] = 1;
+// console.log(plantee)
 
-// * Change Wolfy's hometown from "Yukon Territory" to "Gotham City".
+// // * Change Wolfy's hometown from "Yukon Territory" to "Gotham City".
 
-for(let i = 0; i < wolfy.length; i ++){
-  if(wolfy[i] === "Yukon Territory"){
-    wolfy[i] = 'Gotham City'
-  }
+// for(let i = 0; i < wolfy.length; i ++){
+//   if(wolfy[i] === "Yukon Territory"){
+//     wolfy[i] = 'Gotham City'
+//   }
+// }
+// console.log(wolfy)
+
+// // * Give D'Art a second hometown by adding "Hawkins"
+// dart.push('Hawkins')
+// console.log(dart)
+
+// // * Porgee decides that Wolfy can't be named "Wolfy" anymore. Remove "Wolfy" from the wolfy array and replace it with "Gameboy"
+
+// for(let i = 0; i < wolfy.length; i ++){
+//   if(wolfy[i] === "Wolfy"){
+//     wolfy[i] = 'GameBoy'
+//   }
+// }
+// console.log(wolfy)
+
+
+// Yell at the Ninja Turtles
+// * Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo).
+// * Use a for of loop to call toUpperCase() on each of them and print out the result.
+
+const ninja = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo']
+let index = 0;
+for(let i of ninja) {
+  ninja[index] = i.toUpperCase()
+  index ++
 }
-console.log(wolfy)
-
-// * Give D'Art a second hometown by adding "Hawkins"
-dart.push('Hawkins')
-console.log(dart)
-
-// * Porgee decides that Wolfy can't be named "Wolfy" anymore. Remove "Wolfy" from the wolfy array and replace it with "Gameboy"
-
-for(let i = 0; i < wolfy.length; i ++){
-  if(wolfy[i] === "Wolfy"){
-    wolfy[i] = 'GameBoy'
-  }
-}
-console.log(wolfy)
+console.log(ninja)

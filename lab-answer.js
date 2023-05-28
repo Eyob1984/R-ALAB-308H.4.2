@@ -87,56 +87,93 @@
 
 //Methods, Revisited
 
-const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+//const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
 
 // * Console log the index of Titanic.
 
-console.log(favMovies.indexOf('Titanic'))
+//console.log(favMovies.indexOf('Titanic'))
 
 // // sort()
 
-console.log(favMovies.sort()) // Its sort the array in assending order
+//console.log(favMovies.sort()) // Its sort the array in assending order
 
 // // pop()
 
-console.log(favMovies.pop())  // It removes the last element from the Array
+//console.log(favMovies.pop())  // It removes the last element from the Array
 
 // //push()
 
-favMovies.push('Guardians of the Galaxy') // It adds new element at end of the array
+//favMovies.push('Guardians of the Galaxy') // It adds new element at end of the array
 
 // // reverse()
-favMovies.reverse() // It reverse the array 
+//favMovies.reverse() // It reverse the array 
 
 // //shift()
-console.log(favMovies.shift()) // It removes the last element from the array.
+//console.log(favMovies.shift()) // It removes the last element from the array.
 
 // //unshift()
-console.log(favMovies.unshift('You')) // It add new element at bignning of the array
-console.log(favMovies)
+// console.log(favMovies.unshift('You')) // It add new element at bignning of the array
+// console.log(favMovies)
 
 //splice() - Django Unchained" and add "Avatar"
 
-let index = 0;
-for(let i of favMovies) {
-  if(i ==='Django Unchained') {
-    favMovies.splice(index, 1, 'Avatar') // using splice() we can remove a specific element and add element on specific index
-  }
-  if(index > favMovies.length){
-    break
-  } 
+//let index = 0;
+//for(let i of favMovies) {
+ // if(i ==='Django Unchained') {
+    //favMovies.splice(index, 1, 'Avatar') // using splice() we can remove a specific element and add element on specific index
+  //}
+  //if(index > favMovies.length){
+  //  break
+ // } 
   
-index ++
-}
+//index ++
+//}
 
-console.log(favMovies)
+//console.log(favMovies)
 
 //slice()
 //slice the last half of the array. (Challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it.)
 
-let half = (favMovies.length -1) / 2;
-console.log(favMovies.slice(half)) // we sliced the array in half permanently. 
+//let half = (favMovies.length -1) / 2;
+//console.log(favMovies.slice(half)) // we sliced the array in half permanently. 
 
-console.log(favMovies.indexOf('Fast and Furious'))
+//console.log(favMovies.indexOf('Fast and Furious'))
 
 // the index of the 'Fast and Furious' is still 18. hmm ...
+
+
+// Where is Waldo
+// With the following multi-dimensional array:
+/* Remove Eggbert (hint look at the slice/splice methods).
+Change "Neff" to "No One".
+Access and console.log "Waldo". */
+
+
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                      ["Lucinda", "Jacc", "Neff", "Snoop"],
+                      ["Petunia", ["Baked Goods", "Waldo"]]];
+                      
+
+/* Remove Eggbert (hint look at the slice/splice methods). */
+const remove = whereIsWaldo.splice(1, 1,)
+console.log(remove)
+console.log((whereIsWaldo))
+
+
+/* Remove Eggbert (hint look at the slice/splice methods).
+Change "Neff" to "No One".
+Access and console.log "Waldo". */
+const flatWhereIsWaldo = whereIsWaldo.flat()
+let index = 0;
+for(let i of flatWhereIsWaldo) {
+ if(i ==='Neff') {
+    flatWhereIsWaldo.splice(index, 1, 'No one') // using splice() we can remove a specific element and add element on specific index
+  }
+  if(index > flatWhereIsWaldo.length){
+   break
+ } 
+ index++
+}
+console.log(flatWhereIsWaldo)
+
+

@@ -149,31 +149,42 @@ Change "Neff" to "No One".
 Access and console.log "Waldo". */
 
 
-const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
-                      ["Lucinda", "Jacc", "Neff", "Snoop"],
-                      ["Petunia", ["Baked Goods", "Waldo"]]];
-                      
-
-/* Remove Eggbert (hint look at the slice/splice methods). */
-const remove = whereIsWaldo.splice(1, 1,)
-console.log(remove)
-console.log((whereIsWaldo))
+// const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+//                       ["Lucinda", "Jacc", "Neff", "Snoop"],
+//                       ["Petunia", ["Baked Goods", "Waldo"]]];
 
 
-/* Remove Eggbert (hint look at the slice/splice methods).
-Change "Neff" to "No One".
-Access and console.log "Waldo". */
-const flatWhereIsWaldo = whereIsWaldo.flat()
-let index = 0;
-for(let i of flatWhereIsWaldo) {
- if(i ==='Neff') {
-    flatWhereIsWaldo.splice(index, 1, 'No one') // using splice() we can remove a specific element and add element on specific index
-  }
-  if(index > flatWhereIsWaldo.length){
-   break
- } 
- index++
-}
-console.log(flatWhereIsWaldo)
+// /* Remove Eggbert (hint look at the slice/splice methods). */
+// const remove = whereIsWaldo.splice(1, 1,)
+// console.log(remove)
+// console.log((whereIsWaldo))
 
 
+// /* Remove Eggbert (hint look at the slice/splice methods).
+// Change "Neff" to "No One".
+// Access and console.log "Waldo". */
+// const flatWhereIsWaldo = whereIsWaldo.flat()
+// let index = 0;
+// for(let i of flatWhereIsWaldo) {
+//  if(i ==='Neff') {
+//     flatWhereIsWaldo.splice(index, 1, 'No one') // using splice() we can remove a specific element and add element on specific index
+//   }
+//   if(index > flatWhereIsWaldo.length){
+//    break
+//  } 
+//  index++
+// }
+// console.log(flatWhereIsWaldo)
+
+
+/*Excited Kitten
+// Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
+// For every even number in your loop, log "...human... why you taking pictures of me...?", "...the catnip made me do it...", or "...why does the red dot always get away...?" at random. */
+
+let logs = ''
+ for (let i = 0; i <=20; i++) {
+  logs += 'Love me, per me! HSSSSSS!  '
+  console.log("...human... why you taking pictures of me...?", "...the catnip made me do it...",  "...why does the red dot always get away...?")
+ }
+
+ console.log(logs)
